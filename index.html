@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Čelechovice Voda 2026 | Berounka na raftech</title>
-  <meta name="description" content="Oficiální stránka vodácké expedice Čelechovice Voda 2026. Informace o Berounce, raftech, cenách a odjezdu.">
+  <meta name="description" content="Oficiální stránka vodácké expedice Čelechovice Voda 2026. Informace o Berounce, raftech, cenách, odjezdu a trase.">
   
   <!-- Google Fonts: Outfit for Headings, Plus Jakarta Sans for Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,6 @@
   
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
-  <!-- Leaflet Maps CSS & JS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
   <link rel="stylesheet" href="index.css">
 </head>
@@ -33,9 +29,6 @@
         <li><a href="#domu" class="nav-link active">Domů</a></li>
         <li><a href="#organizace" class="nav-link">Organizace</a></li>
         <li><a href="#trasa" class="nav-link">Trasa & Kempy</a></li>
-        <li><a href="#vybava" class="nav-link">Co s sebou</a></li>
-        <li><a href="#posadka" class="nav-link">Flotila</a></li>
-        <li><a href="#kontakt" class="nav-link btn-contact">Přidat se</a></li>
       </ul>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
         <i data-lucide="menu"></i>
@@ -52,7 +45,7 @@
         <h1 class="hero-title">Čelechovice Voda 2026</h1>
         <p class="hero-subtitle">Letos měníme kanoe za pohodlné rafty a splouváme malebnou Berounku z Žloukovic přes Beroun až do Dobřichovic.</p>
         <div class="hero-cta-group">
-          <a href="#kontakt" class="btn btn-primary">Chci jet taky</a>
+          <a href="#trasa" class="btn btn-primary">Prozkoumat trasu</a>
           <a href="#organizace" class="btn btn-secondary">Organizační info</a>
         </div>
       </div>
@@ -177,7 +170,11 @@
             <p class="timeline-distance"><i data-lucide="navigation"></i> cca 18 km na raftech</p>
             <p>Vyplutí ze Žloukovic. Mineme jez pod zámkem Nižbor a jez Hýskov (oba budeme přetahovat). Večer dorazíme do **Autokempu Na Hrázi v Berouně**.</p>
             <p><strong>Ubytování:</strong> Plně vybavený kemp na ostrově s veškerým zázemím (sprchy, WC, občerstvení, kousek do centra Berouna na večeři).</p>
-            <div id="map-day2" class="timeline-map"></div>
+            
+            <!-- Map Day 2 -->
+            <div class="timeline-map-container">
+              <img src="assets/map-day2.png" alt="Mapa Žloukovice – Beroun" class="timeline-map-img">
+            </div>
             <a href="https://mapy.cz/turisticka?planovani-trasy&rc=9fj1wxXab39gBQ.xX6LD&rs=ward&rs=firm&ri=13491&ri=13147139&mrp=%7B%22c%22%3A144%2C%22dt%22%3A%22%22%2C%22d%22%3Atrue%7D&xc=%5B%5D&rwp=1%3B9fpfuxXYE.lMcdWYjXx3sb" target="_blank" class="map-link-btn">
               <i data-lucide="external-link"></i> Otevřít trasu v Mapy.cz
             </a>
@@ -195,7 +192,11 @@
             <p class="timeline-distance"><i data-lucide="navigation"></i> cca 12 km na raftech</p>
             <p>Splutí velkého jezu v Berouně (přetahování). Krásná plavba skrz CHKO Český kras se zastávkou na oběd a pivo v Srbsku. Večer dorazíme do kempu pod hradem Karlštejn.</p>
             <p><strong>Ubytování:</strong> Autokemp Karlštejn (případně kemp ve Stínu), krásné okolí s výhledem na hrad.</p>
-            <div id="map-day3" class="timeline-map"></div>
+            
+            <!-- Map Day 3 -->
+            <div class="timeline-map-container">
+              <img src="assets/map-day3.png" alt="Mapa Beroun – Karlštejn" class="timeline-map-img">
+            </div>
             <a href="https://mapy.cz/turisticka?planovani-trasy&rc=9gBQ.xX6LD9gPzPxXDXM&rs=firm&rs=firm&ri=13147139&ri=364227&mrp=%7B%22c%22%3A144%2C%22dt%22%3A%22%22%2C%22d%22%3Atrue%7D&xc=%5B%5D&rwp=1%3B9gHr5xXIWLjKVxXC2P" target="_blank" class="map-link-btn">
               <i data-lucide="external-link"></i> Otevřít trasu v Mapy.cz
             </a>
@@ -213,7 +214,11 @@
             <p class="timeline-distance"><i data-lucide="navigation"></i> cca 11 km na raftech</p>
             <p>Vyplutí z Karlštejna. Projedeme Zadní Třebaň (jez Třebaň) a Lety. Cíl v **Autokempu Dobřichovice**.</p>
             <p><strong>Ubytování:</strong> Autokemp Dobřichovice (přímo u jezu naproti zámku, restaurace U Jezu, sprchy, WC).</p>
-            <div id="map-day4" class="timeline-map"></div>
+            
+            <!-- Map Day 4 -->
+            <div class="timeline-map-container">
+              <img src="assets/map-day4.png" alt="Mapa Karlštejn – Dobřichovice" class="timeline-map-img">
+            </div>
             <a href="https://mapy.cz/turisticka?planovani-trasy&rc=9gPzPxXDXM9gejzd1x&rs=firm&rs=firm&ri=364227&ri=635415&mrp=%7B%22c%22%3A144%2C%22dt%22%3A%22%22%2C%22d%22%3Atrue%7D&xc=%5B%5D&rwp=1%3B9gTH1xWzw29g1whgZU" target="_blank" class="map-link-btn">
               <i data-lucide="external-link"></i> Otevřít trasu v Mapy.cz
             </a>
@@ -232,234 +237,6 @@
             <p>V pondělí (státní svátek) už není plánovaná žádná plavba. Ráno v klidu sbalíme stany, odevzdáme rafty a rozejdeme se domů. Kemp se nachází jen pár minut od vlakového nádraží Dobřichovice s přímými spoji směr Praha a Beroun.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Equipment Section -->
-  <section id="vybava" class="section vybava-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Co s sebou na raft?</h2>
-        <p>Veškerou těžkou bagáž (stany, spacáky, krosny) převáží Pedro autem s vozejkem mezi kempy. Na lodích nic netaháme a jedeme zcela nalehko! Na vodu ti stačí jen drobnosti.</p>
-      </div>
-
-      <div class="checklist-card">
-        <div class="checklist-progress-container">
-          <span class="progress-label">Sbaleno:</span>
-          <div class="progress-bar-bg">
-            <div class="progress-bar-fill" id="progress-bar" style="width: 0%"></div>
-          </div>
-          <span class="progress-percent" id="progress-text">0%</span>
-        </div>
-
-        <div class="checklist-grid">
-          <div class="checklist-group">
-            <h3><i data-lucide="shirt"></i> Oblečení & obutí</h3>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Staré tenisky nebo sandály do vody (pantofle uplavou!)</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Plavky & pokrývka hlavy (kšiltovka/šátek)</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Triko s dlouhým rukávem proti spálení sluncem</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Nepromokavá bunda / pláštěnka</span>
-            </label>
-          </div>
-
-          <div class="checklist-group">
-            <h3><i data-lucide="backpack"></i> Kamping & spaní</h3>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Stan (ideálně sdílený ve dvojici)</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Spacák & karimatka</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Čelovka nebo svítilna</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Lžíce, kapesní nůž a hrneček</span>
-            </label>
-          </div>
-
-          <div class="checklist-group">
-            <h3><i data-lucide="first-aid"></i> Osobní věci & doklady</h3>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Občanský průkaz & kartička pojišťovny</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Opalovací krém & repelent</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Hotovost (v kempech a stáncích ne všude berou karty)</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Powerbanka & nabíječka v nepromokavém sáčku</span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Crew Section -->
-  <section id="posadka" class="section posadka-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Raftová flotila</h2>
-        <p>Máme objednaných 5 raftů Colorado/Sympatika. Postupně sestavíme posádky.</p>
-      </div>
-
-      <div class="crew-grid">
-        <!-- Raft 1 -->
-        <div class="crew-card">
-          <div class="boat-badge"><i data-lucide="users"></i> Raft #1 (Rezervováno)</div>
-          <div class="crew-members">
-            <div class="member">
-              <i data-lucide="user" class="icon-zadak"></i>
-              <div>
-                <strong>Pedro</strong>
-                <span>Kapitán raftu & logistika vozejku</span>
-              </div>
-            </div>
-            <div class="member-divider"></div>
-            <div class="member">
-              <i data-lucide="smile" class="icon-hacek"></i>
-              <div>
-                <strong>Posádka 1</strong>
-                <span>Místa obsazena</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Raft 2 -->
-        <div class="crew-card">
-          <div class="boat-badge"><i data-lucide="users"></i> Raft #2 (Rezervováno)</div>
-          <div class="crew-members">
-            <div class="member">
-              <i data-lucide="user" class="icon-zadak"></i>
-              <div>
-                <strong>Kormidelník #2</strong>
-                <span>Bude upřesněno</span>
-              </div>
-            </div>
-            <div class="member-divider"></div>
-            <div class="member">
-              <i data-lucide="smile" class="icon-hacek"></i>
-              <div>
-                <strong>Posádka 2</strong>
-                <span>Místa k dispozici</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Raft 3 -->
-        <div class="crew-card">
-          <div class="boat-badge"><i data-lucide="users"></i> Raft #3 (Rezervováno)</div>
-          <div class="crew-members">
-            <div class="member">
-              <i data-lucide="user" class="icon-zadak"></i>
-              <div>
-                <strong>Kormidelník #3</strong>
-                <span>Bude upřesněno</span>
-              </div>
-            </div>
-            <div class="member-divider"></div>
-            <div class="member">
-              <i data-lucide="smile" class="icon-hacek"></i>
-              <div>
-                <strong>Posádka 3</strong>
-                <span>Místa k dispozici</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Raft 4 -->
-        <div class="crew-card">
-          <div class="boat-badge"><i data-lucide="users"></i> Raft #4 (Rezervováno)</div>
-          <div class="crew-members">
-            <div class="member">
-              <i data-lucide="user" class="icon-zadak"></i>
-              <div>
-                <strong>Kormidelník #4</strong>
-                <span>Bude upřesněno</span>
-              </div>
-            </div>
-            <div class="member-divider"></div>
-            <div class="member">
-              <i data-lucide="smile" class="icon-hacek"></i>
-              <div>
-                <strong>Posádka 4</strong>
-                <span>Místa k dispozici</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Raft 5 -->
-        <div class="crew-card open-boat">
-          <div class="boat-badge"><i data-lucide="help-circle"></i> Raft #5 (Volný)</div>
-          <div class="crew-members">
-            <p class="open-boat-text">Hledáme posádku a kormidelníka pro pátý objednaný raft! Přihlas se níže.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="kontakt" class="section kontakt-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Přidej se k nám</h2>
-        <p>Máš zájem jet na vodu 2026? Vyplň krátký formulář a dej nám vědět, kolik dospělých a dětí s tebou pojede.</p>
-      </div>
-
-      <div class="contact-wrapper">
-        <form class="contact-form" id="contact-form">
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="name">Jméno a příjmení kontaktujícího</label>
-              <input type="text" id="name" required placeholder="např. Jan Novák">
-            </div>
-            <div class="form-group">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" required placeholder="name@domain.cz">
-            </div>
-            <div class="form-group">
-              <label for="adults">Počet dospělých (1000 Kč/os.)</label>
-              <input type="number" id="adults" min="1" value="1" required>
-            </div>
-            <div class="form-group">
-              <label for="kids">Počet dětí (500 Kč/os.)</label>
-              <input type="number" id="kids" min="0" value="0" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="message">Poznámka / Vzkaz pro kormidelníky</label>
-            <textarea id="message" rows="4" placeholder="Chceš jet s někým konkrétním na raftu? Máš dotaz k ubytování nebo parkování ve Žloukovicích?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-submit">Odeslat přihlášku <i data-lucide="send"></i></button>
-        </form>
       </div>
     </div>
   </section>
