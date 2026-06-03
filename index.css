@@ -946,6 +946,7 @@ p {
   color: var(--secondary);
   position: absolute;
   left: 0;
+}
 
 /* Maps Styling */
 .timeline-map {
