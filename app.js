@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveLinks();
 });
 
-// 1. Countdown Timer (Target: July 2, 2026 18:00)
+// 1. Countdown Timer (Target: July 2, 2026 17:30)
 function initCountdown() {
-  const targetDate = new Date('July 2, 2026 18:00:00').getTime();
+  const targetDate = new Date('July 2, 2026 17:30:00').getTime();
   
   const daysVal = document.getElementById('days');
   const hoursVal = document.getElementById('hours');
