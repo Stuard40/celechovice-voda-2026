@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Čelechovice Voda 2026 | Vodácká Expedice</title>
+  <meta name="description" content="Oficiální stránka vodácké expedice Čelechovice Voda 2026. Informace o trase, posádce, výbavě a registraci.">
+  
+  <!-- Google Fonts: Outfit for Headings, Plus Jakarta Sans for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <i data-lucide="waves" class="logo-icon"></i>
+        <span>VODA 2026</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#domu" class="nav-link active">Domů</a></li>
+        <li><a href="#trasa" class="nav-link">Trasa</a></li>
+        <li><a href="#vybava" class="nav-link">Co s sebou</a></li>
+        <li><a href="#posadka" class="nav-link">Posádka</a></li>
+        <li><a href="#kontakt" class="nav-link btn-contact">Přidat se</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="domu" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-badge">Expedice Léto 2026</span>
+        <h1 class="hero-title">Čelechovice Voda 2026</h1>
+        <p class="hero-subtitle">Připrav se na nezapomenutelný splav plný peřejí, táboráků a legendárních zážitků s čelechovickou partou.</p>
+        <div class="hero-cta-group">
+          <a href="#kontakt" class="btn btn-primary">Chci jet taky</a>
+          <a href="#trasa" class="btn btn-secondary">Prozkoumat trasu</a>
+        </div>
+      </div>
+      
+      <!-- Countdown Widget -->
+      <div class="countdown-card">
+        <h3 class="countdown-title">Vyplouváme za</h3>
+        <div class="countdown-grid">
+          <div class="countdown-item">
+            <span class="countdown-value" id="days">00</span>
+            <span class="countdown-label">Dní</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label">Hodin</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label">Minut</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="seconds">00</span>
+            <span class="countdown-label">Sekund</span>
+          </div>
+        </div>
+        <div class="countdown-footer">
+          <i data-lucide="calendar"></i>
+          <span>3. – 6. července 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route Section -->
+  <section id="trasa" class="section trasa-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Plánovaná trasa</h2>
+        <p>Letos splouváme horní tok Vltavy z Vyššího Brodu až do Boršova. Čeká nás krásná šumavská příroda a legendární jezy.</p>
+      </div>
+      
+      <div class="timeline">
+        <!-- Day 1 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i data-lucide="anchor"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-day">Den 1 • 3. 7.</span>
+            <h3>Vyšší Brod – Rožmberk</h3>
+            <p class="timeline-distance"><i data-lucide="navigation"></i> 10 km • cca 3-4 hodiny</p>
+            <p>Sraz v kempu Vyšší Brod, převzetí lodí, instruktáž a první seznamovací plavba k hradu Rožmberk. Večer táborák a kytary.</p>
+          </div>
+        </div>
+        
+        <!-- Day 2 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i data-lucide="compass"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-day">Den 2 • 4. 7.</span>
+            <h3>Rožmberk – Český Krumlov</h3>
+            <p class="timeline-distance"><i data-lucide="navigation"></i> 22 km • cca 6 hodin</p>
+            <p>Nejdelší a nejkrásnější úsek s průjezdem historickým centrem Českého Krumlova. Splutí legendárních jezů pod zámkem.</p>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i data-lucide="tent"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-day">Den 3 • 5. 7.</span>
+            <h3>Český Krumlov – Zlatá Koruna</h3>
+            <p class="timeline-distance"><i data-lucide="navigation"></i> 15 km • cca 4-5 hodin</p>
+            <p>Pohodové splouvání s meandry, návštěva kláštera ve Zlaté Koruně. Večerní hry a příprava na závěrečnou etapu.</p>
+          </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i data-lucide="flag"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-day">Den 4 • 6. 7.</span>
+            <h3>Zlatá Koruna – Boršov nad Vltavou</h3>
+            <p class="timeline-distance"><i data-lucide="navigation"></i> 20 km • cca 5 hodin</p>
+            <p>Poslední peřeje před Boršovem, vrácení lodí, závěrečné vyhodnocení expedice a odjezd domů.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipment Section -->
+  <section id="vybava" class="section vybava-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Co s sebou na vodu?</h2>
+        <p>Sbal se chytře. Tady je interaktivní checklist základní výbavy. Co máš sbaleno, to si odškrtni!</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-progress-container">
+          <span class="progress-label">Sbaleno:</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="progress-bar" style="width: 0%"></div>
+          </div>
+          <span class="progress-percent" id="progress-text">0%</span>
+        </div>
+
+        <div class="checklist-grid">
+          <div class="checklist-group">
+            <h3><i data-lucide="shirt"></i> Oblečení & obutí</h3>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Boty do vody (staré tenisky nebo neoprenky - ne pantofle!)</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Plavky & funkční triko proti spálení</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Nepromokavá bunda / pláštěnka</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Teplé oblečení na večer k ohni</span>
+            </label>
+          </div>
+
+          <div class="checklist-group">
+            <h3><i data-lucide="backpack"></i> Kamping & spaní</h3>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Stan (ideálně do dvojice)</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Spacák & karimatka</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Čelovka / svítilna</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Ešus, lžíce, nůž</span>
+            </label>
+          </div>
+
+          <div class="checklist-group">
+            <h3><i data-lucide="first-aid"></i> Osobní věci & doklady</h3>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Občanka / kartička pojišťovny (v nepromokavém obalu)</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Opalovací krém & repelent</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Osobní lékárnička (náplasti, léky)</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Powerbanka & nabíječka</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crew Section -->
+  <section id="posadka" class="section posadka-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Lodní posádky</h2>
+        <p>Kdo s kým sedí v lodi. Pokud ještě nemáš háčka nebo zadáka, napiš nám přes formulář!</p>
+      </div>
+
+      <div class="crew-grid">
+        <!-- Boat 1 -->
+        <div class="crew-card">
+          <div class="boat-badge"><i data-lucide="ship-wheel"></i> Kánoe Vydra #1</div>
+          <div class="crew-members">
+            <div class="member">
+              <i data-lucide="user" class="icon-zadak"></i>
+              <div>
+                <strong>Pavel (Zadák)</strong>
+                <span>Kapitán expedice</span>
+              </div>
+            </div>
+            <div class="member-divider"></div>
+            <div class="member">
+              <i data-lucide="smile" class="icon-hacek"></i>
+              <div>
+                <strong>Hanka (Háček)</strong>
+                <span>Funguje jako navigátor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boat 2 -->
+        <div class="crew-card">
+          <div class="boat-badge"><i data-lucide="ship-wheel"></i> Kánoe Vydra #2</div>
+          <div class="crew-members">
+            <div class="member">
+              <i data-lucide="user" class="icon-zadak"></i>
+              <div>
+                <strong>Marek (Zadák)</strong>
+                <span>Kormidelník, co občas kličkuje</span>
+              </div>
+            </div>
+            <div class="member-divider"></div>
+            <div class="member">
+              <i data-lucide="smile" class="icon-hacek"></i>
+              <div>
+                <strong>Lenka (Háček)</strong>
+                <span>Motor lodi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boat 3 -->
+        <div class="crew-card open-boat">
+          <div class="boat-badge"><i data-lucide="help-circle"></i> Volná loď #3</div>
+          <div class="crew-members">
+            <p class="open-boat-text">Hledáme posádku pro tuto loď! Chceš jet jako zadák nebo háček? Přihlas se dole.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="kontakt" class="section kontakt-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Přidej se k nám</h2>
+        <p>Máš zájem jet na vodu 2026? Vyplň krátký formulář a my se ti ozveme ohledně rezervace lodí a místa v kempu.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Jméno a příjmení</label>
+              <input type="text" id="name" required placeholder="např. Jan Novák">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" required placeholder="name@domain.cz">
+            </div>
+            <div class="form-group">
+              <label for="role">Preferovaná role</label>
+              <select id="role">
+                <option value="zadak">Zadák (zkušený kormidelník)</option>
+                <option value="hacek">Háček (dříč na přídi)</option>
+                <option value="single">Single (hledám parťáka)</option>
+                <option value="nerozhoduje">Nerozhoduje / Nováček</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="gear">Vlastní výbava</label>
+              <select id="gear">
+                <option value="none">Nemám nic (vše půjčit)</option>
+                <option value="partial">Mám stan/spacák (loď půjčit)</option>
+                <option value="full">Mám vlastní loď i kamping výbavu</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Poznámka / Vzkaz pro kapitána</label>
+            <textarea id="message" rows="4" placeholder="Chceš jet s někým konkrétním v lodi? Nebo máš speciální dotaz?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">Odeslat přihlášku <i data-lucide="send"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Čelechovice Voda. Vytvořeno s <i data-lucide="heart" class="heart-icon"></i> pro vodáckou komunitu.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Stuard40/celechovice-voda-2026" target="_blank" aria-label="GitHub Repository">
+          <i data-lucide="github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
