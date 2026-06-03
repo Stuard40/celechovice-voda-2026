@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initChecklist();
   initFormSubmit();
   initActiveLinks();
+  initMaps();
 });
 
 // 1. Countdown Timer (Target: July 3, 2026)
@@ -179,4 +180,105 @@ function initActiveLinks() {
       }
     });
   });
+}
+
+// 6. Mapy.cz / Leaflet Map Initialization
+function initMaps() {
+  const map2El = document.getElementById('map-day2');
+  const map3El = document.getElementById('map-day3');
+  const map4El = document.getElementById('map-day4');
+  
+  if (typeof L === 'undefined') return;
+  
+  // Custom marker styles
+  const startIcon = L.divIcon({
+    className: 'custom-map-marker marker-start',
+    html: '<div style="background-color: #0d9488; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 8px rgba(0,0,0,0.5);"></div>',
+    iconSize: [12, 12]
+  });
+  
+  const endIcon = L.divIcon({
+    className: 'custom-map-marker marker-end',
+    html: '<div style="background-color: #f59e0b; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 8px rgba(0,0,0,0.5);"></div>',
+    iconSize: [12, 12]
+  });
+  
+  const weirIcon = L.divIcon({
+    className: 'custom-map-marker marker-weir',
+    html: '<div style="background-color: #ef4444; width: 10px; height: 10px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 8px rgba(0,0,0,0.5);"></div>',
+    iconSize: [10, 10]
+  });
+  
+  if (map2El) {
+    const map2 = L.map('map-day2', {
+      scrollWheelZoom: false
+    }).setView([49.993, 14.027], 11);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map2);
+    
+    const route2 = [
+      [50.0189, 13.9757], // Žloukovice
+      [50.0065, 13.9850], // bends
+      [50.0016, 13.9998], // Nižbor
+      [49.9950, 14.0250],
+      [49.9833, 14.0531], // Hýskov
+      [49.9675, 14.0792]  // Beroun
+    ];
+    
+    L.polyline(route2, {color: '#0d9488', weight: 4, opacity: 0.85}).addTo(map2);
+    
+    L.marker([50.0189, 13.9757], {icon: startIcon}).addTo(map2).bindPopup('<b>Start: Žloukovice</b><br>Tábořiště Blackfoot');
+    L.marker([50.0016, 13.9998], {icon: weirIcon}).addTo(map2).bindPopup('<b>Jez Nižbor</b><br>Špatně sjízdný, přetahuje se vlevo');
+    L.marker([49.9833, 14.0531], {icon: weirIcon}).addTo(map2).bindPopup('<b>Jez Hýskov</b><br>Přetahuje se vlevo (sportovní propust)');
+    L.marker([49.9675, 14.0792], {icon: endIcon}).addTo(map2).bindPopup('<b>Cíl: Beroun</b><br>Autokemp Na Hrázi');
+  }
+  
+  if (map3El) {
+    const map3 = L.map('map-day3', {
+      scrollWheelZoom: false
+    }).setView([49.948, 14.135], 12);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map3);
+    
+    const route3 = [
+      [49.9675, 14.0792], // Beroun
+      [49.9657, 14.0841], // Beroun jez
+      [49.9550, 14.1020], 
+      [49.9366, 14.1352], // Srbsko
+      [49.9317, 14.1843]  // Karlštejn
+    ];
+    
+    L.polyline(route3, {color: '#0d9488', weight: 4, opacity: 0.85}).addTo(map3);
+    
+    L.marker([49.9675, 14.0792], {icon: startIcon}).addTo(map3).bindPopup('<b>Start: Beroun</b><br>Autokemp Na Hrázi');
+    L.marker([49.9657, 14.0841], {icon: weirIcon}).addTo(map3).bindPopup('<b>Jez Beroun</b><br>Nebezpečný jez, přetahuje se');
+    L.marker([49.9366, 14.1352], {icon: startIcon}).addTo(map3).bindPopup('<b>Srbsko</b><br>Zastávka na oběd a pivo');
+    L.marker([49.9317, 14.1843], {icon: endIcon}).addTo(map3).bindPopup('<b>Cíl: Karlštejn</b><br>Autokemp Karlštejn');
+  }
+  
+  if (map4El) {
+    const map4 = L.map('map-day4', {
+      scrollWheelZoom: false
+    }).setView([49.924, 14.227], 12);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map4);
+    
+    const route4 = [
+      [49.9317, 14.1843], // Karlštejn
+      [49.9194, 14.2125], // Zadní Třebaň
+      [49.9234, 14.2709]  // Dobřichovice
+    ];
+    
+    L.polyline(route4, {color: '#f59e0b', weight: 4, opacity: 0.85}).addTo(map4);
+    
+    L.marker([49.9317, 14.1843], {icon: startIcon}).addTo(map4).bindPopup('<b>Start: Karlštejn</b><br>Autokemp Karlštejn');
+    L.marker([49.9194, 14.2125], {icon: weirIcon}).addTo(map4).bindPopup('<b>Jez Zadní Třebaň</b><br>Přetahuje se');
+    L.marker([49.9234, 14.2709], {icon: endIcon}).addTo(map4).bindPopup('<b>Cíl: Dobřichovice</b><br>Autokemp Dobřichovice');
+  }
 }
