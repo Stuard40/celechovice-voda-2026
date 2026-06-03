@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 1. Countdown Timer (Target: July 3, 2026)
 function initCountdown() {
-  const targetDate = new Date('July 3, 2026 09:00:00').getTime();
+  const targetDate = new Date('July 2, 2026 18:00:00').getTime();
   
   const daysVal = document.getElementById('days');
   const hoursVal = document.getElementById('hours');

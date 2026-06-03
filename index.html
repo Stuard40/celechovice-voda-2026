@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Čelechovice Voda 2026 | Vodácká Expedice</title>
-  <meta name="description" content="Oficiální stránka vodácké expedice Čelechovice Voda 2026. Informace o trase, posádce, výbavě a registraci.">
+  <title>Čelechovice Voda 2026 | Berounka na raftech</title>
+  <meta name="description" content="Oficiální stránka vodácké expedice Čelechovice Voda 2026. Informace o Berounce, raftech, cenách a odjezdu.">
   
   <!-- Google Fonts: Outfit for Headings, Plus Jakarta Sans for Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +23,14 @@
     <div class="nav-container">
       <a href="#" class="nav-logo">
         <i data-lucide="waves" class="logo-icon"></i>
-        <span>VODA 2026</span>
+        <span>BEROUNKA 2026</span>
       </a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#domu" class="nav-link active">Domů</a></li>
-        <li><a href="#trasa" class="nav-link">Trasa</a></li>
+        <li><a href="#organizace" class="nav-link">Organizace</a></li>
+        <li><a href="#trasa" class="nav-link">Trasa & Kempy</a></li>
         <li><a href="#vybava" class="nav-link">Co s sebou</a></li>
-        <li><a href="#posadka" class="nav-link">Posádka</a></li>
+        <li><a href="#posadka" class="nav-link">Flotila</a></li>
         <li><a href="#kontakt" class="nav-link btn-contact">Přidat se</a></li>
       </ul>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
@@ -43,18 +44,18 @@
     <div class="hero-bg-overlay"></div>
     <div class="hero-container">
       <div class="hero-content">
-        <span class="hero-badge">Expedice Léto 2026</span>
+        <span class="hero-badge">Berounka na raftech</span>
         <h1 class="hero-title">Čelechovice Voda 2026</h1>
-        <p class="hero-subtitle">Připrav se na nezapomenutelný splav plný peřejí, táboráků a legendárních zážitků s čelechovickou partou.</p>
+        <p class="hero-subtitle">Letos měníme kanoe za pohodlné rafty a splouváme malebnou Berounku z Žloukovic přes Beroun až do Dobřichovic.</p>
         <div class="hero-cta-group">
           <a href="#kontakt" class="btn btn-primary">Chci jet taky</a>
-          <a href="#trasa" class="btn btn-secondary">Prozkoumat trasu</a>
+          <a href="#organizace" class="btn btn-secondary">Organizační info</a>
         </div>
       </div>
       
       <!-- Countdown Widget -->
       <div class="countdown-card">
-        <h3 class="countdown-title">Vyplouváme za</h3>
+        <h3 class="countdown-title">Odjezd od hospody za</h3>
         <div class="countdown-grid">
           <div class="countdown-item">
             <span class="countdown-value" id="days">00</span>
@@ -75,7 +76,53 @@
         </div>
         <div class="countdown-footer">
           <i data-lucide="calendar"></i>
-          <span>3. – 6. července 2026</span>
+          <span>Čtvrtek 2. července 2026 v 18:00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logistics & Prices Section -->
+  <section id="organizace" class="section organizace-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Organizační pokyny & Ceny</h2>
+        <p>Zde najdeš klíčové informace o platbách, odjezdu, lodích a logistice.</p>
+      </div>
+
+      <div class="org-grid">
+        <!-- Card: Odjezd -->
+        <div class="org-card">
+          <div class="org-card-icon"><i data-lucide="truck"></i></div>
+          <h3>Sraz & Odjezd</h3>
+          <p class="org-highlight">Čtvrtek 2. 7. v 18:00</p>
+          <ul>
+            <li><strong>Místo:</strong> Sraz u místní hospody v Čelechovicích.</li>
+            <li><strong>Logistika:</strong> Pedro naloží velký vozejk na rafty a věci.</li>
+            <li><strong>Cesta:</strong> Trvá přibližně <strong>27 minut</strong> na první tábořiště.</li>
+          </ul>
+        </div>
+
+        <!-- Card: Finance -->
+        <div class="org-card">
+          <div class="org-card-icon"><i data-lucide="coins"></i></div>
+          <h3>Příspěvek na akci</h3>
+          <p class="org-highlight">Dospělý 1000 Kč / Dítě 500 Kč</p>
+          <ul>
+            <li><strong>V ceně:</strong> Půjčení raftů, pádla, vesty, barely na věci a společná doprava materiálu.</li>
+            <li><strong>Splatnost:</strong> Informace o platbě dodá kapitán dodatečně.</li>
+          </ul>
+        </div>
+
+        <!-- Card: Rafty -->
+        <div class="org-card">
+          <div class="org-card-icon"><i data-lucide="ship"></i></div>
+          <h3>Flotila & Rafty</h3>
+          <p class="org-highlight">Aktuálně objednány 4 rafty</p>
+          <ul>
+            <li><strong>Kapacita:</strong> Rafty jsou bezpečné, stabilní a pohodlné pro delší splouvání.</li>
+            <li><strong>Půjčovna:</strong> V jednání (upřesníme, až se potvrdí konkrétní půjčovna).</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -85,8 +132,8 @@
   <section id="trasa" class="section trasa-section">
     <div class="container">
       <div class="section-header">
-        <h2>Plánovaná trasa</h2>
-        <p>Letos splouváme horní tok Vltavy z Vyššího Brodu až do Boršova. Čeká nás krásná šumavská příroda a legendární jezy.</p>
+        <h2>Plánovaná trasa & Kempy</h2>
+        <p>Letos splouváme Berounku v úseku z Žloukovic do Dobřichovic. Trasa je klidná a bezpečná.</p>
       </div>
       
       <div class="timeline">
@@ -96,23 +143,36 @@
             <i data-lucide="anchor"></i>
           </div>
           <div class="timeline-content">
-            <span class="timeline-day">Den 1 • 3. 7.</span>
-            <h3>Vyšší Brod – Rožmberk</h3>
-            <p class="timeline-distance"><i data-lucide="navigation"></i> 10 km • cca 3-4 hodiny</p>
-            <p>Sraz v kempu Vyšší Brod, převzetí lodí, instruktáž a první seznamovací plavba k hradu Rožmberk. Večer táborák a kytary.</p>
+            <span class="timeline-day">Den 1 • Čtvrtek 2. 7.</span>
+            <h3>Sraz & přesun do Žloukovic (Tábořiště Blackfoot)</h3>
+            <p class="timeline-distance"><i data-lucide="map-pin"></i> Žloukovice (pravý břeh)</p>
+            <p>Odjezd v 18:00 od hospody. Pedro naloží vozejk a přejedeme do Žloukovic. Postavíme stany a zahájíme akci.</p>
+            
+            <div class="warning-box">
+              <i data-lucide="alert-triangle"></i>
+              <div>
+                <strong>Důležité info o tábořišti Blackfoot:</strong>
+                <ul>
+                  <li>Je to velmi **přírodní a spartánské** tábořiště pro vodáky (suché toalety - kadibudky, dovážená voda v barelech, neteče zde teplá voda a není tu elektřina).</li>
+                  <li>Na místě funguje **kiosek s občerstvením** (čepované pivo, limo, klobásy, kytary).</li>
+                  <li>Do kempu je **zákaz vjezdu aut**. Pedro s vozejkem tam může vjet pouze na nezbytné vyložení lodí a věcí a auto pak musí areál opustit.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         
         <!-- Day 2 -->
         <div class="timeline-item">
           <div class="timeline-icon">
-            <i data-lucide="compass"></i>
+            <i data-lucide="waves"></i>
           </div>
           <div class="timeline-content">
-            <span class="timeline-day">Den 2 • 4. 7.</span>
-            <h3>Rožmberk – Český Krumlov</h3>
-            <p class="timeline-distance"><i data-lucide="navigation"></i> 22 km • cca 6 hodin</p>
-            <p>Nejdelší a nejkrásnější úsek s průjezdem historickým centrem Českého Krumlova. Splutí legendárních jezů pod zámkem.</p>
+            <span class="timeline-day">Den 2 • Pátek 3. 7.</span>
+            <h3>Žloukovice – Beroun</h3>
+            <p class="timeline-distance"><i data-lucide="navigation"></i> cca 18 km na raftech</p>
+            <p>Vyplutí ze Žloukovic. Mineme jez pod zámkem Nižbor a jez Hýskov (oba budeme přetahovat). Večer dorazíme do **Autokempu Na Hrázi v Berouně**.</p>
+            <p><strong>Ubytování:</strong> Plně vybavený kemp na ostrově s veškerým zázemím (sprchy, WC, občerstvení, kousek do centra Berouna na večeři).</p>
           </div>
         </div>
 
@@ -122,10 +182,11 @@
             <i data-lucide="tent"></i>
           </div>
           <div class="timeline-content">
-            <span class="timeline-day">Den 3 • 5. 7.</span>
-            <h3>Český Krumlov – Zlatá Koruna</h3>
-            <p class="timeline-distance"><i data-lucide="navigation"></i> 15 km • cca 4-5 hodin</p>
-            <p>Pohodové splouvání s meandry, návštěva kláštera ve Zlaté Koruně. Večerní hry a příprava na závěrečnou etapu.</p>
+            <span class="timeline-day">Den 3 • Sobota 4. 7.</span>
+            <h3>Beroun – Dobřichovice</h3>
+            <p class="timeline-distance"><i data-lucide="navigation"></i> cca 23 km na raftech</p>
+            <p>Splutí velkého jezu v Berouně (přetahování). Krásná celodenní plavba skrz CHKO Český kras. Mineme Srbsko, Karlštejn (zde uděláme pauzu na jídlo) a Zadní Třebaň. Cíl v **Autokempu Dobřichovice**.</p>
+            <p><strong>Ubytování:</strong> Autokemp Dobřichovice (přímo u jezu naproti zámku, restaurace U Jezu, teplé sprchy, WC).</p>
           </div>
         </div>
 
@@ -135,10 +196,10 @@
             <i data-lucide="flag"></i>
           </div>
           <div class="timeline-content">
-            <span class="timeline-day">Den 4 • 6. 7.</span>
-            <h3>Zlatá Koruna – Boršov nad Vltavou</h3>
-            <p class="timeline-distance"><i data-lucide="navigation"></i> 20 km • cca 5 hodin</p>
-            <p>Poslední peřeje před Boršovem, vrácení lodí, závěrečné vyhodnocení expedice a odjezd domů.</p>
+            <span class="timeline-day">Den 4 • Neděle 5. 7.</span>
+            <h3>Dobřichovice (konec akce & rozchod)</h3>
+            <p class="timeline-distance"><i data-lucide="calendar"></i> Neděle dopoledne (bez plavby)</p>
+            <p>V neděli už není plánovaná žádná plavba. Ráno v klidu sbalíme stany, odevzdáme rafty a rozejdeme se domů. Kemp se nachází jen pár minut od vlakového nádraží Dobřichovice s přímými spoji směr Praha a Beroun.</p>
           </div>
         </div>
       </div>
@@ -149,8 +210,8 @@
   <section id="vybava" class="section vybava-section">
     <div class="container">
       <div class="section-header">
-        <h2>Co s sebou na vodu?</h2>
-        <p>Sbal se chytře. Tady je interaktivní checklist základní výbavy. Co máš sbaleno, to si odškrtni!</p>
+        <h2>Co s sebou na raft?</h2>
+        <p>Na raftu je dostatek místa, ale sbal se do nepromokavých obalů nebo barelů, které dostaneme.</p>
       </div>
 
       <div class="checklist-card">
@@ -167,19 +228,19 @@
             <h3><i data-lucide="shirt"></i> Oblečení & obutí</h3>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
-              <span>Boty do vody (staré tenisky nebo neoprenky - ne pantofle!)</span>
+              <span>Staré tenisky nebo sandály do vody (pantofle uplavou!)</span>
             </label>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
-              <span>Plavky & funkční triko proti spálení</span>
+              <span>Plavky & pokrývka hlavy (kšiltovka/šátek)</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" class="checklist-checkbox">
+              <span>Triko s dlouhým rukávem proti spálení sluncem</span>
             </label>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
               <span>Nepromokavá bunda / pláštěnka</span>
-            </label>
-            <label class="checklist-item">
-              <input type="checkbox" class="checklist-checkbox">
-              <span>Teplé oblečení na večer k ohni</span>
             </label>
           </div>
 
@@ -187,7 +248,7 @@
             <h3><i data-lucide="backpack"></i> Kamping & spaní</h3>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
-              <span>Stan (ideálně do dvojice)</span>
+              <span>Stan (ideálně sdílený ve dvojici)</span>
             </label>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
@@ -195,11 +256,11 @@
             </label>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
-              <span>Čelovka / svítilna</span>
+              <span>Čelovka nebo svítilna</span>
             </label>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
-              <span>Ešus, lžíce, nůž</span>
+              <span>Lžíce, kapesní nůž a hrneček</span>
             </label>
           </div>
 
@@ -207,7 +268,7 @@
             <h3><i data-lucide="first-aid"></i> Osobní věci & doklady</h3>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
-              <span>Občanka / kartička pojišťovny (v nepromokavém obalu)</span>
+              <span>Občanský průkaz & kartička pojišťovny</span>
             </label>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
@@ -215,11 +276,11 @@
             </label>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
-              <span>Osobní lékárnička (náplasti, léky)</span>
+              <span>Hotovost (v kempech a stáncích ne všude berou karty)</span>
             </label>
             <label class="checklist-item">
               <input type="checkbox" class="checklist-checkbox">
-              <span>Powerbanka & nabíječka</span>
+              <span>Powerbanka & nabíječka v nepromokavém sáčku</span>
             </label>
           </div>
         </div>
@@ -231,60 +292,82 @@
   <section id="posadka" class="section posadka-section">
     <div class="container">
       <div class="section-header">
-        <h2>Lodní posádky</h2>
-        <p>Kdo s kým sedí v lodi. Pokud ještě nemáš háčka nebo zadáka, napiš nám přes formulář!</p>
+        <h2>Raftová flotila</h2>
+        <p>Máme objednané 4 rafty Colorado/Sympatika. Postupně sestavíme posádky.</p>
       </div>
 
       <div class="crew-grid">
-        <!-- Boat 1 -->
+        <!-- Raft 1 -->
         <div class="crew-card">
-          <div class="boat-badge"><i data-lucide="ship-wheel"></i> Kánoe Vydra #1</div>
+          <div class="boat-badge"><i data-lucide="users"></i> Raft #1 (Rezervováno)</div>
           <div class="crew-members">
             <div class="member">
               <i data-lucide="user" class="icon-zadak"></i>
               <div>
-                <strong>Pavel (Zadák)</strong>
-                <span>Kapitán expedice</span>
+                <strong>Pedro</strong>
+                <span>Kapitán raftu & logistika vozejku</span>
               </div>
             </div>
             <div class="member-divider"></div>
             <div class="member">
               <i data-lucide="smile" class="icon-hacek"></i>
               <div>
-                <strong>Hanka (Háček)</strong>
-                <span>Funguje jako navigátor</span>
+                <strong>Posádka 1</strong>
+                <span>Místa obsazena</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Boat 2 -->
+        <!-- Raft 2 -->
         <div class="crew-card">
-          <div class="boat-badge"><i data-lucide="ship-wheel"></i> Kánoe Vydra #2</div>
+          <div class="boat-badge"><i data-lucide="users"></i> Raft #2 (Rezervováno)</div>
           <div class="crew-members">
             <div class="member">
               <i data-lucide="user" class="icon-zadak"></i>
               <div>
-                <strong>Marek (Zadák)</strong>
-                <span>Kormidelník, co občas kličkuje</span>
+                <strong>Kormidelník #2</strong>
+                <span>Bude upřesněno</span>
               </div>
             </div>
             <div class="member-divider"></div>
             <div class="member">
               <i data-lucide="smile" class="icon-hacek"></i>
               <div>
-                <strong>Lenka (Háček)</strong>
-                <span>Motor lodi</span>
+                <strong>Posádka 2</strong>
+                <span>Místa k dispozici</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Boat 3 -->
+        <!-- Raft 3 -->
+        <div class="crew-card">
+          <div class="boat-badge"><i data-lucide="users"></i> Raft #3 (Rezervováno)</div>
+          <div class="crew-members">
+            <div class="member">
+              <i data-lucide="user" class="icon-zadak"></i>
+              <div>
+                <strong>Kormidelník #3</strong>
+                <span>Bude upřesněno</span>
+              </div>
+            </div>
+            <div class="member-divider"></div>
+            <div class="member">
+              <i data-lucide="smile" class="icon-hacek"></i>
+              <div>
+                <strong>Posádka 3</strong>
+                <span>Místa k dispozici</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Raft 4 -->
         <div class="crew-card open-boat">
-          <div class="boat-badge"><i data-lucide="help-circle"></i> Volná loď #3</div>
+          <div class="boat-badge"><i data-lucide="help-circle"></i> Raft #4 (Volný)</div>
           <div class="crew-members">
-            <p class="open-boat-text">Hledáme posádku pro tuto loď! Chceš jet jako zadák nebo háček? Přihlas se dole.</p>
+            <p class="open-boat-text">Hledáme posádku a kormidelníka pro čtvrtý objednaný raft! Přihlas se níže.</p>
           </div>
         </div>
       </div>
@@ -296,14 +379,14 @@
     <div class="container">
       <div class="section-header">
         <h2>Přidej se k nám</h2>
-        <p>Máš zájem jet na vodu 2026? Vyplň krátký formulář a my se ti ozveme ohledně rezervace lodí a místa v kempu.</p>
+        <p>Máš zájem jet na vodu 2026? Vyplň krátký formulář a dej nám vědět, kolik dospělých a dětí s tebou pojede.</p>
       </div>
 
       <div class="contact-wrapper">
         <form class="contact-form" id="contact-form">
           <div class="form-grid">
             <div class="form-group">
-              <label for="name">Jméno a příjmení</label>
+              <label for="name">Jméno a příjmení kontaktujícího</label>
               <input type="text" id="name" required placeholder="např. Jan Novák">
             </div>
             <div class="form-group">
@@ -311,26 +394,17 @@
               <input type="email" id="email" required placeholder="name@domain.cz">
             </div>
             <div class="form-group">
-              <label for="role">Preferovaná role</label>
-              <select id="role">
-                <option value="zadak">Zadák (zkušený kormidelník)</option>
-                <option value="hacek">Háček (dříč na přídi)</option>
-                <option value="single">Single (hledám parťáka)</option>
-                <option value="nerozhoduje">Nerozhoduje / Nováček</option>
-              </select>
+              <label for="adults">Počet dospělých (1000 Kč/os.)</label>
+              <input type="number" id="adults" min="1" value="1" required>
             </div>
             <div class="form-group">
-              <label for="gear">Vlastní výbava</label>
-              <select id="gear">
-                <option value="none">Nemám nic (vše půjčit)</option>
-                <option value="partial">Mám stan/spacák (loď půjčit)</option>
-                <option value="full">Mám vlastní loď i kamping výbavu</option>
-              </select>
+              <label for="kids">Počet dětí (500 Kč/os.)</label>
+              <input type="number" id="kids" min="0" value="0" required>
             </div>
           </div>
           <div class="form-group">
-            <label for="message">Poznámka / Vzkaz pro kapitána</label>
-            <textarea id="message" rows="4" placeholder="Chceš jet s někým konkrétním v lodi? Nebo máš speciální dotaz?"></textarea>
+            <label for="message">Poznámka / Vzkaz pro kormidelníky</label>
+            <textarea id="message" rows="4" placeholder="Chceš jet s někým konkrétním na raftu? Máš dotaz k ubytování nebo parkování ve Žloukovicích?"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-submit">Odeslat přihlášku <i data-lucide="send"></i></button>
         </form>
@@ -341,7 +415,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-container">
-      <p>&copy; 2026 Čelechovice Voda. Vytvořeno s <i data-lucide="heart" class="heart-icon"></i> pro vodáckou komunitu.</p>
+      <p>&copy; 2026 Čelechovice Voda. Vytvořeno s <i data-lucide="heart" class="heart-icon"></i> pro vodáckou partu.</p>
       <div class="footer-links">
         <a href="https://github.com/Stuard40/celechovice-voda-2026" target="_blank" aria-label="GitHub Repository">
           <i data-lucide="github"></i> GitHub
